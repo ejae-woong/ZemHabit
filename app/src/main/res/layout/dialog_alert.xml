@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_dialog">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="안내"
+        android:textColor="@color/black"
+        android:fontFamily="@font/noto_sans_bold"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘 이전으로 설정할 수 없어요."
+        android:paddingVertical="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/noto_sans_medium"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/background_datepickersubmit"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

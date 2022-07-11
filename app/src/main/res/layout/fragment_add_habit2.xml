@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AddHabitFragment2"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/img_add_habit_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_add_habit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/noto_sans_bold"
+            android:textColor="@color/black"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#22000000"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_add_habit_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
